@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="https://kit.fontawesome.com/0e589f85bf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
+	<title>Configuración</title>
+</head>
+<body>
+	<header>
+		<div class="barra_superior">
+			<i class="fa-solid fa-house"></i>
+			<a href="pagina_principal.html" class="incio"><h3>Inicio</h3></a>
+			<i class="fa-solid fa-arrow-left"></i>
+			<a href="javascript: history.go(-1)"><h3 class="volver_atras">Volver atrás</h3></a>
+			<i class="fa-solid fa-arrow-right"></i>
+			<div class="segunda_parte_barra_superior">
+				<i class="fa-regular fa-circle-question"></i>
+				<a href="ayuda.html"><h3 class="ayuda">Ayuda</h3></a>
+				<i class="fa-regular fa-window-minimize"></i>
+				<i class="fa-solid fa-maximize"></i>
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+		</div>
+		<div class="caja_1_1">
+            <a href="factura.php" class="caja1_factura"> <h3>Factura</h3> </a>
+            <a href="inventario.php" class="caja1_inventario"><h3>Inventario</h3></a>
+            <a href="categoria.php" class="caja1_inventario"><h3>Categoria</h3></a>
+            <div class="caja_1_1_izquierda">
+            <div id="fecha-hora"> <script src="fecha_hora.js"></script> </div>
+            <div class="menu">
+                <button class="boton-menu" onclick="toggleMenu()"><h4 class="caja1_menu">Menú</h4></button>
+                <ul class="lista-menu" id="lista-menu">
+                    <li><a href="configuracion.html"><h4>Configuracion</h4></a></li>
+                    <li><a href="inicio_sesion.html"><h4>Cerrar Sesion</h4></a></li>
+                </ul>
+            </div>
+			</div>
+		</div>
+		<div class="caja_2_1">
+			<i class="fa-solid fa-coins" id="icono_caja2_1"></i>
+			<a href="ventas.html" id="caja2_1"><h3>Ventas </h3></a>
+			<i class="fa-solid fa-cart-shopping" id="icono_caja2_1"></i>
+			<a href="compras.html" id="caja2_1"><h3>Compras </h3></a>
+			<i class="fa-solid fa-bag-shopping" id="icono_caja2_1"></i>
+			<a href="productos.html" id="caja2_1"><h3>Productos </h3></a>
+			<i class="fa-solid fa-user" id="icono_caja2_1"></i>
+			<a href="personas.html" id="caja2_1"><h3>Personas </h3></a>
+		</div>
+		<div class="caja2_configuracion">
+			<h1>Configuración</h1>
+			<a href="perfil.html"><h3>Perfil</h3></a>
+			<a href="perfil.html"><h3>Apariencia</h3></a>
+			<a href="perfil.html"><h3>Hora e idioma</h3></a>
+		</div>
+		<div class="caja2_configuracion_muestra">
+			
+		</div>
+	</header>
+<script src="script.js"></script>
+</body>
+</html>

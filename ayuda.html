@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/0e589f85bf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap">
+	<title>Ayuda</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="navbar">
+				<div class="barnavizq">
+					<i class="fa-solid fa-house"></i>
+					<a href="inicio_sesion.html" class="incio">Inicio</a>
+					<i class="fa-solid fa-arrow-left"></i>
+					<a href="javascript: history.go(-1)" class="atras">Volver atrás</a>
+				</div>
+				<div class="navbarder">
+					<i class="fa-regular fa-circle-question"></i>
+					<a href="ayuda.html" class="ayuda">Ayuda</a>
+  					<a href="#" onclick="minimizeWindow()" class="mini">Minimizar</a>
+  					<a href="#" onclick="maximizeWindow()" class="maxi">Maximizar</a>
+  					<a href="#" onclick="closeWindow()" class="cerrar">Cerrar</a>
+  				</div>
+
+			</div>
+		</nav>
+		<nav>
+			<div>
+				<div class="navbargender">
+        	    	<a href="inventario.php" class="text_inventario">Inventario</a>
+        	    	<a href="categoria.php" class="text_inventario">Categoria</a>
+        	    </div>
+        	    <div class="navbargeniz">
+        	    	<div id="fecha-hora"> <script src="fecha_hora.js"></script> </div>
+        	    <div class="menu">
+        	        <button class="boton_menu" onclick="toggleMenu()">Menú</button>
+        	        <ul class="lista-menu" id="lista-menu">
+        	        	<div class="textmenu">
+        	            	<li><a href="configuracion.html"><h4>Configuracion</h4></a></li>
+        	            	<li><a href="inicio_sesion.html"><h4>Cerrar Sesion</h4></a></li>
+        	            </div>
+        	        </ul>
+        	    </div>
+			</div>
+		</nav>
+		<nav>
+			<div class="navbariz">
+				<i class="fa-solid fa-coins" id="icono_caja2_1"></i>
+				<a href="ventas.php" class="text_ventas"><h3>Ventas </h3></a>
+				<i class="fa-solid fa-cart-shopping" id="icono_caja2_1"></i>
+				<a href="compras.php" class="text_compras"><h3>Compras </h3></a>
+				<i class="fa-solid fa-bag-shopping" id="icono_caja2_1"></i>
+				<a href="productos.php" class="text_productos"><h3>Productos </h3></a>
+				<i class="fa-solid fa-user" id="icono_caja2_1"></i>
+				<a href="personas.php" class="text_personas"><h3>Personas </h3></a>
+			</div>
+		<nav>
+		<div class="caja2_pagina_principal">
+			<h1>Ayuda</h1>
+			<input type="text" class="ayuda_1" placeholder="Escriba su problema">
+			<h3>Comentarios</h3>
+			<input type="text" class="ayuda_1" placeholder="Escriba su comentario"> <br>
+			<button id="boton">Enviar</button>
+		</div>
+	</header>
+<script src="script.js"></script>
+</body>
+</html>
